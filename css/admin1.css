@@ -1,0 +1,383 @@
+body {
+    font-family: 'Arimo', sans-serif;
+    background-color: white;
+}
+
+.background {
+    background-color: #1B1B1B;
+    opacity: 0.3;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 20;
+}
+.header-top{
+  background: white;
+}
+.header .logo img {
+   margin-left: 60px;
+}
+.header .menu{
+    background: rgb(123 123 123);
+    padding: 10px 0;
+}
+.navbar-dark .menu .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 32.8px;
+    font-weight: normal;
+    padding: 0 40px;
+}
+#team{
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+}
+.menu .nav-link:hover,
+.menu .nav-link:focus,
+.menu .nav-link:active,
+.menu .nav-link.active {
+    color: #B68C45 !important;
+}
+section.content{
+  margin-top: 115px;
+}
+.content .banner {
+    width: 100%;
+    height: 650px;
+    z-index: 30;
+    position: relative;
+    background-image: url("../assets/images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-height: 100vh;
+}
+
+.content .banner h1 {
+    font-size: 60px;
+    z-index: 300;
+    position: relative;
+}
+.banner .button{
+    position: relative;
+    top: 60%;
+    text-align: center;
+}
+.banner .button .btn{
+    padding: 35px 90px;
+    font-size: 20px;
+}
+.button a.btn,
+.button .btn {
+    padding: 18px 45px;
+    margin-top: 15px;
+    background-color: #B68C45;
+    position: relative;
+    z-index: 200;
+    color: rgb(254, 254, 254);
+    border: 2px solid white;
+}
+
+.button h3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+ 
+.service{
+    margin: 70px 40px 80px 40px;
+}
+
+.service .title h1, .about .title h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.service .content li{
+    font-size: 23px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.benefity h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.benefity li{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.service .col-12.col-md-6{
+    display: flex;
+}
+.service .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery img{
+    object-fit: cover;
+    width: 100%;
+}
+.gallery .picture1 img{
+    object-position: center center;
+    height: 250px;
+}
+.gallery .picture2 img{
+    object-position: 50% 20%;
+    height: 490px;
+}
+.gallery .picture3 img{
+    object-position: 50% 20%;
+    height: 370px;
+}
+.gallery .picture4 img{
+    object-position: 50% 40%;
+    height: 370px;
+}
+
+
+.about{
+    margin-top: 80px;
+    padding: 0 40px;
+    display: flex;
+    align-content: center;
+}
+.about .title{
+    margin-bottom: 30px;
+}
+.about img{
+    object-fit: cover;
+    object-position: 40% center;
+    height: 650px;
+    width: 100%;
+}
+.about .content p{
+    font-size: 22.5px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 20px;
+}
+.about button{
+    padding: 18px 45px;
+    margin-top: 15px;
+    background-color: #B68C45;
+    position: relative;
+    z-index: 200;
+    color: rgb(254, 254, 254);
+    border: 2px solid white;
+    width: 94%;
+}
+
+footer{
+    margin-top: 80px;
+}
+footer .title{
+    background-color: rgb(123 123 123);
+}
+footer .title h1{
+    color: white;
+    padding: 30px 0 30px 50px;
+    font-size: 47px;
+}
+footer h3{
+    font-size: 20px;
+}
+.send-mail{
+    width: 100%;
+    padding-right: 100px;
+}
+.send-mail .form-group{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.send-mail input::placeholder, .send-mail textarea::placeholder{
+    color: #b2b2b2;
+}
+.send-mail .btn{
+    padding: 18px 45px;
+    margin-top: 15px;
+    background-color: #B68C45;
+    position: relative;
+    z-index: 200;
+    color: rgb(254, 254, 254);
+    border: 2px solid white;
+}
+.button-top{
+    position: fixed;
+    bottom: 16%;
+    right: 0;
+    background-color: #B68C45;
+    padding: 10px 16px;
+    z-index: 1500;
+}
+.button-top a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.send-mail h6{
+    color: #565656;
+}
+.icon-contact{
+    display: flex;
+    margin-left: 40px;
+}
+.icon-contact div{
+    padding-right: 15px;
+    width: 70px;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.notification{
+    padding: 10px 20px;
+    background-color: #3cb14a;
+    position: fixed;
+    z-index: 200;
+    color: rgb(254, 254, 254);
+    top: 5%;
+    right: 0;
+}
+#close {
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+footer .bottom{
+  background-color: #eeeeee;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 4.5%;
+}
+footer .bottom a{
+  text-decoration: none;
+}
+@media screen and (max-width:992px) {
+    .header .logo img {
+        margin-left: 0;
+     }
+}
+@media screen and (max-width: 768px) {
+  .header .logo img {
+   margin-left: 0;
+}
+  .menu .nav-link{
+    font-size: 18px;
+  }
+  .navbar-dark .menu .navbar-nav .nav-link{
+    font-size: 19px;
+    padding: 0 10px;
+  }
+  .navbar-expand-md .navbar-nav{
+    flex-direction: row;
+  }
+  #team{
+    border: none;
+}
+  .header button{
+    position: absolute;
+    right: 2%;
+  }
+  .content .banner{
+    height: 26vh;
+  }
+  .banner .button .btn{
+    padding: 12px 33px;
+  }
+  .service .col-12.col-md-6, .about .box{
+    padding: 0 3.5%;
+  }
+  .service .title h1, .about .title h1{
+    font-size: 35px;
+  }
+  .service{
+    margin: 60px 10px 40px 10px;
+    scroll-margin-top: 120px;
+  }
+  .service .content li, .about .content p{
+    font-size: 19px;
+    padding: 0;
+  }
+  .about{
+    padding: 0;
+    scroll-margin-top: 120px;
+  }
+  .about .picture{
+    padding: 0;
+  }
+  .about img{
+    height: 24vh;
+  }
+  .about button{
+    width: 100%;
+  }
+
+.about button h3 {
+    font-size: 20px;
+}
+  .gallery .picture1 img{
+    object-position: center center;
+    height: 100%;
+}
+.gallery .picture2 img{
+    object-position: 50% 20%;
+    height: 100%;
+}
+  .gallery .row, #about .row{
+    margin: 0;
+  }
+  footer .title h1{
+    padding-left: 0;
+    font-size: 45px;
+  }
+  footer .info{
+    padding: 0 5% !important;
+  }
+  footer .icon-contact{
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+  footer img{
+    width: 40px;
+  }
+  footer .info h5{
+    font-size: 15px;
+  }
+  footer .send-mail{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .send-mail .row{
+    width: 95%;
+  }
+  footer .send-mail h6{
+    margin-left: 5%;
+  }
+  footer .bottom {
+    flex-direction: column;
+    font-size: 12px;
+    text-align: center;
+  }
+  footer .link{
+    display: flex;
+    flex-direction: column;
+  }
+  footer .bottom h6{
+    font-size: 12px;
+  }
+  footer .title h1{
+    text-align: center;
+  }
+}
