@@ -1,1 +1,307 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DREAM TEAM</title>
+    <link rel="icon" type="image/x-icon" href="../page/assets/images/logo1.webp">
+    <link href="../page/vendor/bootstrap.min.css" rel="stylesheet">
+    <script src="../page/vendor/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../page/vendor/font-awesome.css">
+    <link rel="stylesheet" href="../page/css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+    <script src="../page/js/page-test.js"></script>
+</head>
+
+<body onload="checkCookie()">
+    <div class="header">
+        <div class="header-top d-flex align-items-center justify-content-between fixed-top scroll">
+            <nav class="navbar navbar-expand-md navbar-dark w-100 py-0">
+                <div class="row w-100 align-items-center">
+                    <div class="logo d-flex align-items-center col-3 col-md-2 col-lg-5 px-0">
+                        <img src="../page/assets/images/logo2.png" id="logo" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-9 col-md-10 col-lg-7 menu justify-content-end">
+                        <ul class="nav navbar-nav justify-content-center w-100">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#about" id="about1">O NÁS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team1" id="team">NÁŠ TÝM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact" id="contact1">KONTAKT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+    </div>
+    <section class="content">
+        <div class="banner section" name="about1">
+            <div class="background"></div>
+            <div class="picture">
+                <img src="../page/assets/images/banner.webp" alt="" class="img-fluid">
+            </div>
+            <div class="button">
+                <a href="#contact">
+                    <button class="btn ">
+                        <h3>CHCI SE PŘIDAT !</h3>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="service section" name="team" id="team1">
+            <div class="row">
+                <div class="col-12 col-md-6 provide">
+                    <div class="box">
+                        <div class="title">
+                            <h1>Co nabízíme:</h1>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>HPP fix 37.000,-</li>
+                                <li>Velice motivační provizní složka</li>
+                                <li>Notebook</li>
+                                <li>Kariérní postup</li>
+                                <li>Práce v lukrativním prostředí</li>
+                                <li>Pracovní doba 9-17 (pátek do 15:00)</li>
+                                <li>Vzdělávání</li>
+                            </ul>
+                        </div>
+                        <div class="benefity">
+                            <div class="benetify-title">
+                                <h2>Benefity:</h2>
+                            </div>
+                            <ul>
+                                <li>Každý měsíc soutěž o macbook a Iphone 14</li>
+                                <li>Karta Multisport</li>
+                                <li>Soutěže o lístky na Oktagon</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 Requirements">
+                    <div class="box">
+                        <div class="title">
+                            <h1>Požadavky:</h1>
+                        </div>
+                        <div class="content">
+                            <ul class="mb-3 pb-5">
+                                <li>dresscode (business formal, business casual, smart casual, casual)</li>
+                                <li>Český jazyk nutností</li>
+                                <li>Komunikativní a pozitivní přístup</li>
+                                <li>Chtít na sobě pracovat a učit se</li>
+                                <li>Spolehlivost, slušné vystupování</li>
+
+                            </ul>
+                        </div>
+                        <div class="button text-center pb-5">
+                            <a href="#contact">
+                                <button class="btn ">
+                                    <h3>CHCI SE PŘIDAT !</h3>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="gallery section" name="about1">
+            <div class="row">
+                <div class="col-12 col-md-8 px-2 pe-sm-0">
+                    <div class="picture1 mb-2">
+                        <img src="../page/assets/images/gallery/img-1.webp" alt="" class="img-fluid" width="100%"
+                            height="100px">
+                    </div>
+                    <div class="picture2 mb-2">
+                        <img src="../page/assets/images/gallery/img-2.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 px-2">
+                    <div class="picture3 mb-2">
+                        <img src="../page/assets/images/gallery/img-3.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="picture4">
+                        <img src="../page/assets/images/gallery/img-4.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="about section" id="about" name="about1">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                    <div class="box">
+                        <div class="title">
+                            <h1>O NÁS </h1>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Kdo jsme? Tým cílevědomých lidí, kteří mají drive se v životě stále posouvat kupředu.
+                                Prostě
+                                Dream Team! Naše ambice nejsou jen slova, jsou to závazky k tomu dosáhnout vysokých
+                                cílů.
+                                Rádi pracujeme na velkých projektech, protože víme, že to má smysl. A tak si tvoříme
+                                cestu k
+                                životu plnému dobrodružství a luxusu. Pokud jste člověk, který se nehodlá spokojit s
+                                průměrem, jste na správném místě.
+                            </p>
+                        </div>
+                        <div class="btn w-100">
+                            <a href="#contact">
+                                <button>
+                                    <h3 class="mb-0">CHCI SE PŘIDAT !</h3>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 picture">
+                    <img src="../page/assets/images/banner.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="section" name="contact1">
+        <div class="title">
+            <h1>Kontaktujte nás</h1>
+        </div>
+        <div class="row me-0">
+            <div class="col-12 col-md-6 box1">
+                <div class="info ps-5 py-5">
+                    <h5>IČO: 09412581</h5>
+                    <h5>Adresa: Plynární 1617/10, 170 00 Praha, <br>Budova Visionary</h5>
+                    <h3></h3>
+                    <div class="contact mt-5">
+                        <h3><i class="fa fa-phone" aria-hidden="true"></i>
+                            +420 737 708 997
+                        </h3>
+                        <h3><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            nabor.dreamteam@gmail.com
+                        </h3>
+                    </div>
+                </div>
+                <div class="icon-contact">
+                    <div class="ytb">
+                        <a href="">
+                            <img src="../page/assets/images/youtube-icon.webp" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="ins">
+                        <a href="">
+                            <img src="../page/assets/images/ins-icon.webp" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="fb">
+                        <a href="">
+                            <img src="../page/assets/images/fb-icon.webp" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="send-mail">
+                    <div class="row">
+                        <div class="border-left py-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Jméno" />
+                            </div>
+                            <div class="form-group">
+                                <input type="telephone" class="form-control" id="telephone"
+                                    placeholder="Telefonní číslo" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="email" />
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" rows="3" placeholder="Zpráva"></textarea>
+                            </div>
+                            <button class="btn btn-primary" onclick="sendMail()">POSLAT ZPRÁVU</button>
+                        </div>
+                      <h6>Odesláním zprávy souhlasím se</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <h6>Copyright © 2023 Dream Teaam Prague</h4>
+                <div class="link">
+                    <a href="">Zásady cookies</a>
+                </div>
+        </div>
+    </footer>
+    <div class="button-top d-none d-sm-block">
+        <button class="btn btn-top">
+            <a href="#contact" class="text-white"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                Kontaktujte nás
+            </a>
+        </button>
+    </div>
+    <div class="notification d-none">
+        <h6>Your message sent successfully!!</h6>
+    </div>
+  </div>
+      <div class="cookie col-12 col-lg-5" id="cookieNotice">
+        <div class="header">
+            <div class="title">
+                <h4 class="mb-0 py-3">
+                    Spravovat Souhlas s cookies
+                </h4>
+            </div>
+            <div class="button-close" onclick="rejectCookieConsent()">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+        <div class="content-cookie">
+            <div class="cmplz-message mb-3" id="cmplz-message-1-optin">
+                <p class="mb-0">Abychom poskytli co nejlepší služby, používáme k
+                    ukládání a/nebo přístupu k informacím o zařízení, technologie jako jsou soubory cookies. Souhlas s
+                    těmito technologiemi nám umožní zpracovávat údaje, jako je chování při procházení nebo jedinečná ID
+                    na
+                    tomto webu. Nesouhlas nebo odvolání souhlasu může nepříznivě ovlivnit určité vlastnosti a funkce.
+                </p>
+              <a href="">Zásady cookies</a>
+            </div>
+        </div>
+        <div class="button d-flex justify-content-around flex-column flex-md-row">
+            <div class="button-accept" id="accept-cookies" onclick="acceptCookieConsent()">
+                <button class=" button1">Přijmout</button>
+            </div>
+            <div class="button-reject" id="reject-cookies" onclick="rejectCookieConsent()">
+                <button>Odmítnout</button>
+            </div>
+        </div>
+    </div>
+  
+  <div id="instafeed"></div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '9170176489',
+    accessToken: 'EAATqMyOkgOUBOZBGFeIb1xc7mD38MQhjzgNLlJjAbXwPHpogdJkqYwqBCWZCL4qZArLUrswb826kTxo4reHFotkpyDzUFNCKLE7Yz5UaAr8YFZCupOZBD67mE5OS4AvaEU5ie5u5LA24LEy7awyeZB5fFUZBPaKC9cdSyVqnoZBThSiqRuV1hIU8nhVkJpc3izMPVDjHMVQo3vlUzA7wNZCMo2OEcnQz6JO5DIwLRUZAZCjccgqTkJKBmtRiocQz7RP7AZDZD',
+    resolution: 'standard_resolution',
+    limit: 10,
+    template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}"></a>'
+  });
+  userFeed.run();
+});
+  </script>
+</body>
+</html>
