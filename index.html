@@ -288,17 +288,28 @@
         </div>
     </div>
   
-  <div id="instafeed"></div>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+    <div id="instafeed"></div>
   <script type="text/javascript">
-    var feed = new Instafeed({
-      target : 'user',
-      resolution: 'low_resolution',
-      accessToken: 'IGQWRQVW5kVVU4alp4ZAVFYVzZAnU2xTc3BCaExsNGNPRVhCcXpBQW41MXJBdnVHQzNkYThFR2VrTXdaeHB4NWtvVm5GTld6bC1jN1lNTmpscG9VQUdRR3habkJvb3RkWjNkZAW4tdGU1ckVFSnFhSE0tT0NxY1RiU2MZD',
-      limit : 10,
-      template : '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>'
+    const accessToken = 'IGQWROLVVsWmd6RXVMeGZAKUlNlWkVESW5pMUdtNXZAXOWIzTDJsZAzlTaUYwZAC1ZAQ18za05RcDlJZAUYyUEZAaZAzVobjBXN3oxdUhZAcXZAwLVdUN2xVYUdxdXJCSFRaWF9sU1Vkbkc4YkZAtZA2ZA0cWxaNDRycEwzbWFSRTQZD';
+const endpoint = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&access_token=${accessToken}`;
+
+fetch(endpoint)
+  .then(response => response.json())
+  .then(data => {
+    const instafeedContainer = document.getElementById('instafeed');
+    data.data.forEach(post => {
+      const postElement = document.createElement('div');
+      postElement.innerHTML = `
+        <a href="${post.media_url}" target="_blank">
+          <img src="${post.media_url}" alt="${post.caption}" />
+          <h6>${post.caption} ${post}<h6>
+        </a>
+      `;
+      instafeedContainer.appendChild(postElement);
     });
-    feed.run();
+  })
+  .catch(error => console.error('Error fetching Instagram data:', error));
+
 </script>
 </body>
 </html>
