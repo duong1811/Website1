@@ -18,7 +18,6 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
     <script src="js/page.js"></script>
 </head>
 
@@ -290,8 +289,11 @@
     </div>
   
   <div id="instafeed"></div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
   <script type="text/javascript">
     var feed = new Instafeed({
+      target : 'user',
+      resolution: 'low_resolution',
       accessToken: 'IGQWRQVW5kVVU4alp4ZAVFYVzZAnU2xTc3BCaExsNGNPRVhCcXpBQW41MXJBdnVHQzNkYThFR2VrTXdaeHB4NWtvVm5GTld6bC1jN1lNTmpscG9VQUdRR3habkJvb3RkWjNkZAW4tdGU1ckVFSnFhSE0tT0NxY1RiU2MZD',
       limit : 10,
       template : '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>'
