@@ -20,6 +20,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
     <script src="js/page.js"></script>
+    <script src="js/instafeed.min.js"></script>
 </head>
 
 <body onload="checkCookie()">
@@ -290,18 +291,13 @@
     </div>
   
   <div id="instafeed"></div>
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-  var userFeed = new Instafeed({
-    get: 'user',
-    userId: '9170176489',
-    accessToken: 'EAATqMyOkgOUBOZBGFeIb1xc7mD38MQhjzgNLlJjAbXwPHpogdJkqYwqBCWZCL4qZArLUrswb826kTxo4reHFotkpyDzUFNCKLE7Yz5UaAr8YFZCupOZBD67mE5OS4AvaEU5ie5u5LA24LEy7awyeZB5fFUZBPaKC9cdSyVqnoZBThSiqRuV1hIU8nhVkJpc3izMPVDjHMVQo3vlUzA7wNZCMo2OEcnQz6JO5DIwLRUZAZCjccgqTkJKBmtRiocQz7RP7AZDZD',
-    resolution: 'standard_resolution',
-    limit: 10,
-    template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}"></a>'
-  });
-  userFeed.run();
-});
-  </script>
+  <script type="text/javascript">
+    var feed = new Instafeed({
+      accessToken: 'your-token',
+      limit : 10,
+      template : '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>'
+    });
+    feed.run();
+</script>
 </body>
 </html>
